@@ -14,3 +14,33 @@
         opacity: 0.35;
     }
 }
+/* HIRE ME button styling and blinking */
+.hire-me {
+    display: inline-block;
+    padding: 9px 16px;
+    margin-left: 12px;
+    border: 1px solid #18c995;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #18c995 !important;
+    text-decoration: none !important;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    animation: hireBlink 1.2s ease-in-out infinite !important;
+}
+
+@keyframes hireBlink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.35;
+    }
+}
+
+.hire-me:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
